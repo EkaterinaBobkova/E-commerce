@@ -266,15 +266,15 @@ th, td {
 @media screen and (max-width: 500px)  {
     table {
         
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 }
 
 
 
 @media screen and (max-width: 500px)  {
-    td {
+    td, th {
         
-        padding: 12px;
+        padding: 10px;
     }
 }
