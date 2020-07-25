@@ -38,7 +38,7 @@ class Api {
             const apiRequest = new MyRequest(function (response) {
                 resolve(response);
             })
-            apiRequest.get("http://localhost:3000/api/cameras");
+            apiRequest.get("https://oc-p5-api.herokuapp.com/api/cameras");
         })
     }
 
@@ -47,7 +47,7 @@ class Api {
             const apiRequest = new MyRequest(function (response) {
                 resolve(response);
             })
-            apiRequest.get("http://localhost:3000/api/cameras/" + id);
+            apiRequest.get("https://oc-p5-api.herokuapp.com/api/cameras/" + id);
         })
     }
     save(body) {
@@ -55,7 +55,7 @@ class Api {
             const apiRequest = new MyRequest(function (response) {
                 resolve(response);
             })
-            apiRequest.post("http://localhost:3000/api/cameras/order", JSON.stringify(body));
+            apiRequest.post("https://oc-p5-api.herokuapp.com/api/cameras/order", JSON.stringify(body));
         })
     }
 }
